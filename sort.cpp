@@ -10,8 +10,6 @@ int partition(int[], int, int);
 void mergesort(int[], int);
 void copy(int[], int[], int, int, int);
 void merge(int[], int[], int[], int, int);
-void shell(int[], int);
-
 void print(int[], int n);
 void swap(int[], int, int);
 
@@ -107,7 +105,6 @@ void merge(int a[], int b[], int c[], int nb, int nc)
     {
         if (b[i] <= c[j])
             a[k] = b[i++];
-
         else
             a[k] = c[j++];
         
